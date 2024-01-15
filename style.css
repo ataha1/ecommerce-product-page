@@ -88,17 +88,27 @@ body {
   align-items: stretch;
 }
 
-a {
-  text-decoration: none;
-  color: hsl(var(--clr-neutral-hsl-600));
+.nav-list li {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.nav-list a:hover {
+.nav-list a {
+  text-decoration: none;
+  color: hsl(var(--clr-neutral-hsl-600));
+}
+
+.nav-list li:hover {
   border-bottom: 4px solid hsl(var(--clr-primary-hsl-400));
+}
+
+.nav-list a:hover {
   color: hsl(var(--clr-neutral-hsl-700));
+}
+
+a {
+  display: block;
 }
 
 .avatar {
